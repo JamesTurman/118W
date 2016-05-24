@@ -1,0 +1,151 @@
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>MeowMix</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Neucha|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/npm.js"></script>
+</head>
+<style>
+	body { 
+		background-image: url('images/background/kitchenBackground1.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		padding-top: 50px;
+	}
+</style>
+<body>
+	<nav class="navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="main.html"><img src="images/meowmartLogo.png" alt="meowmartLogo" height="28" width ="112"></a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="main.html">Home</a></li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Products
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="active"><a href="meowmix.html">MeowMix</a></li>
+							<li><a href="nutrish.html">Rachael Ray Nutrish</a></li>
+							<li><a href="iams.html">IAMS</a></li> 
+						</ul>
+					</li>
+					<li><a href="whereToBuy.html">Where to Buy</a></li>
+					<li><a href="aboutUs.html">About Us</a></li> 
+					<li><a href="contact.html">Contact a Cat</a></li> 
+					<li><a href="feedback.html">Feedback</a></li>  
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
+			<h1><a href="http://www.meowmix.com"><img src="images/meowmix/meowmixLogo.png" alt="MeowMix" class="img-responsive center-block"></h1>
+			<div class="row top-buffer-medium bottom-buffer-small transparency">
+				<div class="col-xs-12 col-sm-12 col-md-4">
+					<h3 class="text-center handwriteOne">Kitten L'il Nibbles</h3>
+					<a href="#" class="pop" title="Hi there!" data-toggle="popover" data-trigger="hover" data-content="Click to view larger image."><img class="top-buffer-small center-block" src="images/meowmix/meowmixKittenFull.png" alt="Kitten L'il Nibbles" style="width: 370px; height: 370px;"></a>
+					<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">              
+								<div class="modal-body">
+									<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<img src="" class="imagepreview" style="width: 100%;" >
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="btn btn-primary center-block top-buffer-small bottom-buffer-small" data-toggle="modal" data-target="#lilNibbles">More Info</button>
+					<div id="lilNibbles" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Kitten L'il Nibbles</h4>
+								</div>
+								<div class="modal-body">
+									<p>The absolute best treat for your baby kitten. <br><br>Starting at just $2.99/lb.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4">
+					<h3 class="text-center handwriteOne">Seafood Medley</h3>
+					<a href="#" class="pop" title="Hey you!" data-toggle="popover" data-trigger="hover" data-content="Click to view larger image."><img class="top-buffer-small center-block" src="images/meowmix/meowmixSeafoodFull.png" alt="Seafood Medley" style="width: 370px; height: 370px;"></a>
+					<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">              
+								<div class="modal-body">
+									<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<img src="" class="imagepreview" style="width: 100%;" >
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="btn btn-primary center-block top-buffer-small" data-toggle="modal" data-target="#seafoodMedley">More Info</button>
+					<div id="seafoodMedley" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Seafood Medley</h4>
+								</div>
+								<div class="modal-body">
+									<p>Does your cat love sailing the high seas looking for some delicious fish? <br><br>Well, look no further! MeowMix Seafood Medley brings your cat the adventure, at home! <br><br>Starting at just $1.99/lb.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4">
+					<h3 class="text-center handwriteOne">Tender Centers</h3>
+					<a href="#" class="pop" title="Hey you!" data-toggle="popover" data-trigger="hover" data-content="Click to view larger image."><img class="top-buffer-small center-block" src="images/meowmix/meowmixTenderFull.png" alt="Tender Centers" style="width: 370px; height: 370px;"></a>
+					<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">              
+								<div class="modal-body">
+									<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<img src="" class="imagepreview" style="width: 100%;" >
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="btn btn-primary center-block top-buffer-small" data-toggle="modal" data-target="#meowmixTender">More Info</button>
+					<div id="meowmixTender" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Tender Centers</h4>
+								</div>
+								<div class="modal-body">
+									<p>Kitties are tender creatures, so why not reward them with tender food?<br><br>It's time for a treat!<br><br>Bring your cat extra happiness with the MeowMix Tender Centers.<br><br>Starting at just $24.99/lb.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+	</html>
+

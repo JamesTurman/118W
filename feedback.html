@@ -1,0 +1,133 @@
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Feedback</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+	<link rel="shortcut icon" href="assets/sj_favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Neucha|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/npm.js"></script>
+	<script src="js/jquery.js"></script>
+    <script src="js/jquery2.js"></script>
+	<script src="js/jquery-ui.js"></script>
+</head>
+<style>
+	body { 
+		background-image: url('images/background/kitchenBackground5.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		padding-top: 50px;
+	}
+</style>
+<body>
+	<nav class="navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="main.html"><img src="images/meowmartLogo.png" alt="meowmartLogo" height="28" width ="112"></a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="main.html">Home</a></li>
+				<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Products
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="meowmix.html">MeowMix</a></li>
+							<li><a href="nutrish.html">Rachael Ray Nutrish</a></li>
+							<li><a href="iams.html">IAMS</a></li> 
+						</ul>
+					</li>
+					<li><a href="whereToBuy.html">Where to Buy</a></li>
+					<li><a href="aboutUs.html">About Us</a></li> 
+					<li><a href="contact.html">Contact a Cat</a></li> 
+					<li class="active"><a href="feedback.html">Feedback</a></li>  
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row top-buffer-medium bottom-buffer-small transparency">
+				<h1 class="text-center top-buffer-small handwriteTwo">Please leave us some feedback!</h1>
+				<h2 class="text-center top-buffer-small handwriteOne">Click on James' face to write a review.</h2>
+				<p class="text-center">
+					<a href="#"><img class="top-buffer-small img-responsive center-block img-circle" src="images/about/james.jpg" alt="James" data-toggle="modal" data-target="#reviewModal"></a>
+				</p>
+				<div id="reviewModal" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Write a Review</h4>
+									</div>
+									<div class="modal-body" id="formBody" name="formBody">
+										<p>Please fill out the form to submit your review.</p>
+										<form METHOD = "POST" ACTION = "https://www.meowmart.org/feedbackPhp.php" id="meowLoad" onSubmit="return valid(form)">
+											<div class="form-group">
+												<label for="firstName">First Name:</label>
+												<textarea class="form-control" rows="1" name="firstNameReview" id="firstNameReview"></textarea>
+											</div>
+											<div class="form-group">
+												<label for="lastName">Last Name:</label>
+												<textarea class="form-control" rows="1" name="lastNameReview" id="lastNameReview"></textarea>
+											</div>
+											<div class="form-group">
+											<label for="productText"><strong>Product name:</strong></label>
+							      			<p>Start typing to search for and click on product name from the list.<br></p>
+							                        <div>
+							                              <input id="productText" name="productText" title="Start typing product name here">
+							                        </div>
+							                        <script>
+							                              var productTags = [
+							                              "MeowMix - Kitten L'il Nibbles",
+							                              "MeowMix - Seafood Medley",
+							                              "MeowMix - Tender Centers",
+							                              "Nutrish - Salmon and Brown Rice",
+							                              "Nutrish - Whitefish and Potato",
+							                              "Nutrish - Variety Surprise",
+							                              "IAMS - Kitten: Protective Health",
+							                              "IAMS - Multi-Cat Complete",
+							                              "IAMS - Lively Senior"]
+							                              $( "#productText" ).autocomplete({
+							                                    source: productTags,
+							                                    appendTo: formBody,
+							                                    change: function (event, ui) {
+							                                    }
+							                              });
+							                        </script>
+				                       		</div>
+				                       		<label for="productRate"><strong>Product rating:</strong></label>
+							      			<p>Please click on the button corresponding to your rating.<br></p>
+				                       		<div class="btn-group" data-toggle="buttons">
+												<label class="btn btn-info">
+													<input type="radio" name="productRating" id="productRate" autocomplete="off" value="I don't like it."> I don't like it.
+												</label>
+										    	<label class="btn btn-info">
+										    		<input type="radio" name="productRating" id="productRate" autocomplete="off" value="It was okay."> It was okay.
+										    	</label>
+										    	<label class="btn btn-info active">
+										    		<input type="radio" name="productRating" id="productRate" autocomplete="off" value="I LOVED IT!!!" checked> I LOVED IT!!!
+										    	</label>
+											</div>
+											<div class="form-group top-buffer-small">
+												<label for="comments">Rating details:</label>
+												<textarea class="form-control" rows="5" name="comments" id="comments"></textarea>
+											</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+										<input type="submit" value="Submit" action="onclick" class="btn btn-primary">
+									</div>
+									</form>
+								</div>
+							</div>
+						</div>
+				
+				</div>
+		</div>
+	</body>
+	</html>
+

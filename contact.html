@@ -1,0 +1,352 @@
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+	<link rel="shortcut icon" href="assets/sj_favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Neucha|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/npm.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery2.js"></script>
+	<script src="js/jquery-ui.js"></script>
+</head>
+<style>
+	body { 
+		background-image: url('images/background/kitchenBackground8.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		padding-top: 50px;
+	}
+</style>
+<body>
+	<nav class="navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="main.html"><img src="images/meowmartLogo.png" alt="meowmartLogo" height="28" width ="112"></a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="main.html">Home</a></li>
+				<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Products
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="meowmix.html">MeowMix</a></li>
+							<li><a href="nutrish.html">Rachael Ray Nutrish</a></li>
+							<li><a href="iams.html">IAMS</a></li> 
+						</ul>
+					</li>
+					<li><a href="whereToBuy.html">Where to Buy</a></li>
+					<li><a href="aboutUs.html">About Us</a></li> 
+					<li class="active"><a href="contact.html">Contact a Cat</a></li> 
+					<li><a href="feedback.html">Feedback</a></li>  
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="transparency bottom-buffer-small">
+				<h1 class="text-center top-buffer-medium handwriteOne large-type">Connect with our Team</h1>
+				<div class="row top-buffer-small">
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="thumbnail transparency">
+							<a href="https://www.linkedin.com/in/alex-lo-4bb6b945"><img class="top-buffer-small img-responsive center-block" src="images/about/alex.jpg" alt="Alex"></a>
+							<div class="caption">
+								<h3 class="text-center">Contact Alex</h3>
+								<p class="text-center">Please choose the method of contact below.</p>
+								<p class="text-center">
+									<button type="button" class="btn btn-info" data-toggle="modal" data-target="#alexEmail">Email</button>
+									<button type="button" class="btn btn-default" data-toggle="modal" data-target="#alexPhone">Phone</button>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#alexLetter">Letter</button>
+								</p>
+							</div>
+						</div>
+						<div id="alexEmail" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Email Alex</h4>
+									</div>
+									<div class="modal-body">
+										<p>Please fill out the form to contact Alex.</p>
+										<form METHOD = "POST" ACTION = "https://www.meowmart.org/alexContactPhp.php" id="meowLoad" onSubmit="return valid(form)">
+											<div class="form-group">
+												<label for="firstName">First Name:</label>
+												<textarea class="form-control" rows="1" name="emailAlexFirstName" id="firstNameAlexEmail"></textarea>
+											</div>
+											<div class="form-group">
+												<label for="lastName">Last Name:</label>
+												<textarea class="form-control" rows="1" name="emailAlexLastName" id="lastName"></textarea>
+											</div>
+											<div class="form-group top-buffer-small">
+											    <label for="email">Your email address:</label>
+												<input type="email" class="form-control" name="emailAlexEmail" id="email">
+											</div>
+											<p class="top-buffer-small">Select which brand you're most interested in below:</p>
+											<div class="checkbox">
+												<div class="btn-group" data-toggle="buttons">
+												<label class="btn btn-info">
+													<input type="radio" name="emailAlexProduct" id="productRate" autocomplete="off" value="MeowMix">MeowMix&nbsp&nbsp
+												</label>
+										    	<label class="btn btn-info">
+										    		<input type="radio" name="emailAlexProduct" id="productRate" autocomplete="off" value="Rachael Ray Nutrish">Rachael Ray Nutrish&nbsp&nbsp
+										    	</label>
+										    	<label class="btn btn-info">
+										    		<input type="radio" name="emailAlexProduct" id="productRate" autocomplete="off" value="IAMS">IAMS&nbsp&nbsp
+										    	</label>
+											</div>
+											</div>
+											<div class="form-group top-buffer-small">
+												<label for="comments">Comments:</label>
+												<textarea class="form-control" rows="5" name="emailAlexComments" id="comments"></textarea>
+											</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+										<input type="submit" value="Submit" action="onclick" class="btn btn-primary">
+									</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div id="alexPhone" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Call Alex</h4>
+									</div>
+									<div class="modal-body">
+										<p>To save you time, please fill out your info and Alex will call you back soon.</p>
+										<form METHOD = "POST" ACTION = "https://www.meowmart.org/alexContactPhp.php" id="meowLoad" onSubmit="return valid(form)">
+											<div class="form-group">
+												<label for="firstName">First Name:</label>
+												<textarea class="form-control" rows="1" name="callAlexFirstName" id="firstNameAlexPhone"></textarea>
+											</div>
+											<div class="form-group">
+												<label for="lastName">Last Name:</label>
+												<textarea class="form-control" rows="1" name="callAlexLastName" id="lastName"></textarea>
+											</div>
+											<div class="form-group top-buffer-small">
+											    <label for="email">Your phone number:</label>
+												<textarea class="form-control" rows="1" name="callAlexPhone" id="alexPhoneInput"></textarea>
+											</div>
+											<p class="top-buffer-small">Select which brand you're most interested in below:</p>
+											<div class="checkbox">
+												<div class="btn-group" data-toggle="buttons">
+												<label class="btn btn-info">
+													<input type="radio" name="callAlexProduct" id="productRate" autocomplete="off" value="MeowMix">MeowMix&nbsp&nbsp
+												</label>
+										    	<label class="btn btn-info">
+										    		<input type="radio" name="callAlexProduct" id="productRate" autocomplete="off" value="Rachael Ray Nutrish">Rachael Ray Nutrish&nbsp&nbsp
+										    	</label>
+										    	<label class="btn btn-info">
+										    		<input type="radio" name="callAlexProduct" id="productRate" autocomplete="off" value="IAMS">IAMS&nbsp&nbsp
+										    	</label>
+											</div>
+											</div>
+											<div class="form-group top-buffer-small">
+												<label for="comments">Please provide a quick summary of your question:</label>
+												<textarea class="form-control" rows="5" name="callAlexComments" id="comments"></textarea>
+											</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+										<input type="submit" value="Submit" action="onclick" class="btn btn-primary">
+									</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div id="alexLetter" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Write a letter to Alex</h4>
+									</div>
+									<div class="modal-body">
+										<h4 class="text-center">Alex can be reached at the address below.</h4>
+										<h3 class="text-center top-buffer-small">2468 Meowp Way</h3>
+										<h3 class="text-center">La Jolla, CA, 92037</h3>
+										<h4 class="text-center top-buffer-small">Please only send letters written in fountain pen.</h4>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+		
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="thumbnail transparency">
+							<a href="https://www.linkedin.com/in/jamesturman"><img class="top-buffer-small img-responsive center-block" src="images/about/james.jpg" alt="James"></a>
+							<div class="caption">
+								<h3 class="text-center">Contact James</h3>
+								<p class="text-center">Please choose the method of contact below.</p>
+								<p class="text-center">
+									<button type="button" class="btn btn-info" data-toggle="modal" data-target="#jamesEmail">Email</button>
+									<button type="button" class="btn btn-default" data-toggle="modal" data-target="#jamesPhone">Phone</button>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#jamesLetter">Letter</button>
+								</p>
+							</div>
+						</div>
+						<div id="jamesEmail" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Email James</h4>
+									</div>
+									<div class="modal-body">
+										<p>Please fill out the form to contact James.</p>
+										<form METHOD = "POST" ACTION = "https://www.meowmart.org/jamesContactPhp.php" id="meowLoad" onSubmit="return valid(form)">
+											<div class="form-group">
+												<label for="firstName">First Name:</label>
+												<textarea class="form-control" rows="1" name="emailJamesFirstName" id="firstNameJamesEmail"></textarea>
+											</div>
+											<div class="form-group">
+												<label for="lastName">Last Name:</label>
+												<textarea class="form-control" rows="1" name="emailJamesLastName" id="lastName"></textarea>
+											</div>
+											<div class="form-group top-buffer-small">
+											    <label for="email">Your email address:</label>
+												<input type="email" class="form-control" name="emailJamesEmail" id="email">
+											</div>
+											<p class="top-buffer-small">Select which brand you're most interested in below:</p>
+											<div class="checkbox">
+												<div class="btn-group" data-toggle="buttons">
+												<label class="btn btn-info">
+													<input type="radio" name="emailJamesProduct" id="productRate" autocomplete="off" value="MeowMix">MeowMix&nbsp&nbsp
+												</label>
+										    	<label class="btn btn-info">
+										    		<input type="radio" name="emailJamesProduct" id="productRate" autocomplete="off" value="Rachael Ray Nutrish">Rachael Ray Nutrish&nbsp&nbsp
+										    	</label>
+										    	<label class="btn btn-info">
+										    		<input type="radio" name="emailJamesProduct" id="productRate" autocomplete="off" value="IAMS">IAMS&nbsp&nbsp
+										    	</label>
+											</div>
+											</div>
+											<div class="form-group top-buffer-small">
+												<label for="comments">Comments:</label>
+												<textarea class="form-control" rows="5" name="emailJamesComments" id="comments"></textarea>
+											</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+										<input type="submit" value="Submit" action="onclick" class="btn btn-primary">
+									</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div id="jamesPhone" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Call James</h4>
+									</div>
+									<div class="modal-body">
+										<p>To save you time, please fill out your info and James will call you back soon.</p>
+										<form METHOD = "POST" ACTION = "https://www.meowmart.org/jamesContactPhp.php" id="meowLoad" onSubmit="return valid(form)">
+											<div class="form-group">
+												<label for="firstName">First Name:</label>
+												<textarea class="form-control" rows="1" name="callJamesFirstName" id="firstNameJamesPhone"></textarea>
+											</div>
+											<div class="form-group">
+												<label for="lastName">Last Name:</label>
+												<textarea class="form-control" rows="1" name="callJamesLastName" id="lastName"></textarea>
+											</div>
+											<div class="form-group top-buffer-small">
+											    <label for="email">Your phone number:</label>
+												<textarea class="form-control" rows="1" name="callJamesPhone" id="jamesPhoneInput"></textarea>
+											</div>
+											<p class="top-buffer-small">Select which brand you're most interested in below:</p>
+											<div class="checkbox">
+												<div class="btn-group" data-toggle="buttons">
+												<label class="btn btn-info">
+													<input type="radio" name="callJamesProduct" id="productRate" autocomplete="off" value="MeowMix">MeowMix&nbsp&nbsp
+												</label>
+										    	<label class="btn btn-info">
+										    		<input type="radio" name="callJamesProduct" id="productRate" autocomplete="off" value="Rachael Ray Nutrish">Rachael Ray Nutrish&nbsp&nbsp
+										    	</label>
+										    	<label class="btn btn-info">
+										    		<input type="radio" name="callJamesProduct" id="productRate" autocomplete="off" value="IAMS">IAMS&nbsp&nbsp
+										    	</label>
+											</div>
+											</div>
+											<div class="form-group top-buffer-small">
+												<label for="comments">Please provide a quick summary of your question:</label>
+												<textarea class="form-control" rows="5" name="callJamesComments" id="comments"></textarea>
+											</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+										<input type="submit" value="Submit" action="onclick" class="btn btn-primary">
+									</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div id="jamesLetter" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Write a letter to James</h4>
+									</div>
+									<div class="modal-body">
+										<h4 class="text-center">James can be reached at the address below.</h4>
+										<h3 class="text-center top-buffer-small">1657 Turman Drive</h3>
+										<h3 class="text-center">Beverly Hills, CA, 90210</h3>
+										<h4 class="text-center top-buffer-small">Please send letters through CPS (Cat Postal Service).</h4>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="thumbnail transparency">
+							<a href="https://coleandmarmalade.com/"><img class="top-buffer-small img-responsive center-block" src="images/about/mittens.png" alt="mittens"></a>
+							<div class="caption">
+								<h3 class="text-center">Contact Mittens</h3>
+								<p class="text-center">Please choose the method of contact below.</p>
+								<p class="text-center">
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mittensLetter">Letter</button>
+								</p>
+							</div>
+						</div>
+						<div id="mittensLetter" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Write a letter to Mittens</h4>
+									</div>
+									<div class="modal-body">
+										<h3 class="text-center top-buffer-small">Sorry, you can't send letters to Mittens.</h3>
+										<h3 class="text-center top-buffer-small">Because I am a jealous lover.</h3>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+	</html>
+
